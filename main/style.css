@@ -1,0 +1,238 @@
+main{
+    background-color: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Roboto';
+    margin: 0;
+    background-color: #F9EFF6;
+}
+
+.dark-bg{
+    background-color: #23111D;
+}
+
+.light-bg{
+    background-color: #F9EFF6;
+}
+
+.outline-bg{
+    border: 0px solid #23111D;
+    color: #23111D;
+    background-color: #F9EFF6;
+}
+
+#main-banner, #main-banner img{
+    width: 100%;
+}
+
+#main-banner img{
+    border-bottom: 6px solid #23111D;
+}
+
+.profileImg{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0;
+    margin: 0 auto;
+    overflow:auto;
+    
+}
+
+h1.logo{
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    text-indent: -10000px;
+    float: left;
+}
+header{
+    background-color: #23111D;
+    height: 40;
+    padding-top: 8px;
+}
+
+header nav{
+    float: right;
+}
+header nav h2{
+    text-indent: -10000px;
+    height: 0;
+    margin: 0;
+}
+header nav li{
+    float: left;
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: #F9EFF6;
+    font-size: 18px;
+}
+
+.webpageBG{
+    min-height: 50rem;
+    padding-bottom: 120px;
+}
+
+footer{
+    background: #23111D;
+    margin-top: 0;
+    padding: 30px 0;
+    align-content: center;
+}
+
+footer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer ul{
+    float: right;
+    padding: 0;
+    list-style-type: none;
+    color: #F9EFF6;
+    width: 45%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+footer li{
+    margin: 10px 0;
+}
+ footer a{
+    color: #F9EFF6;
+    text-decoration: none;
+ }
+
+ .projectText{
+    font-size: x-large;
+ }
+
+ .projectImg{
+    background-color: #23111D;
+ }
+
+ .imgText{
+     color: #F9EFF6;
+    text-decoration: none;
+    font-size: medium;
+ }
+
+/* Animation */
+.tumblespace{
+    position: relative;
+    height: 100px;
+    width: 100;
+    overflow-x: clip;
+}
+
+.tumble{
+    height: 80px;
+    position: absolute;
+    left: 0px;
+    animation: tumble 20s both infinite linear;
+}
+
+.divider{
+    background-color: #23111D;
+    width: 100%;
+    height: 5px;
+}
+
+@keyframes tumble{
+    from{
+        transform: translateX(-5vw) translateY(-115px) rotate(0deg) ;
+    }
+    to{
+        transform: translateX(105vw) translateY(-115px) rotate(3600deg);
+    }
+}
+
+/* Media Checks */
+ /* For Mid Size */
+
+ @media screen and (max-width: 768px){
+    header nav{
+        float: none;
+        clear: left;
+        width: 100%;
+    }
+    header nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    h1.logo{
+        margin: 10px auto 0;
+        float: none;
+    }
+    header nav ul li{
+        margin: 10px 0;
+        width: 25%;
+        padding: 0;
+        text-align: center;
+    }
+    footer ul{
+        width: 48%;
+    }
+ }
+
+ /*  For Small Size */
+ @media screen and (max-width: 480px) {
+    .burger-nav{
+        display: block;
+        height: 40px;
+        width: 100%;
+        background: url(images/burger.png) no-repeat 98% center;
+        background-color: #12090f;
+        cursor: pointer;
+    }
+    header .wrapper{
+        width: 100%;
+        padding: 0;
+    }
+    header nav ul{
+        overflow: hidden;
+        background: #23111D;
+        height: 0;
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul li{
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    header nav ul li a{
+        color: #F9E3F2;
+        padding: 10px;
+        border-bottom: 1px solid #12090f;
+        display: block;
+        margin: 0;
+    }
+    footer ul{
+        width: 98%;
+        text-align: center;
+    }
+    .projectText{
+        font-size: large;
+     }
+}
+
+.projectBanner{
+    color: #F9E3F2;
+    background-color: #23111D;
+}

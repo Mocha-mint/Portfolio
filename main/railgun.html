@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Project RAILGUN</title>
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <div class="wrapper">
+            <h1 class="logo"></h1>
+            <nav>
+                <a class="burger-nav" id="burger-nav" onclick="toggleClass()"></a>
+                <h2>Main Navigation</h2>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactme.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Main Body -->
+
+<main class="container-xxl webpageBG pt-4 px-4">
+
+    <div class="container-lg p-0 text-center rounded">
+        <div><h2 class="projectBanner p-4">Project RAILGUN</h2></div>
+        <div class="projectImg rounded"><img class="profileImg rounded p-4" src="images/railgunImg1.jpg" alt="Title Screen of project"><p class="p-10 fst-italic imgText">Screen capture of title screen.</p></div>
+        <div class="projectText"><p class="p-10 m-4">Project RAILGUN was a Unreal Engine 5 project developed during my studies at Cal State East Bay in collaboration with Katelyn Ang, Emmet Beebe Foley, and Yuhtoku Fujikake. Given a loose goal of a game project to last at least five minutes, we settled on creating a fast-paced first-person shooter prototype centered around high-speed movement and a single, powerful “Railgun” weapon. The objective was to design a gameplay loop that rewarded accuracy, momentum, and precision, delivering a tight and skill-driven experience. This project represented a significant evolution from my earlier work, transitioning from experimental mechanics to a more structured and cohesive game experience. </p></div>
+        <div class="projectImg rounded"><img class="profileImg rounded p-4" src="images/railgunImg2.jpg" alt="Early prototype environment in Unreal Engine"><p class="p-10 fst-italic imgText">Early prototype environment in Unreal Engine.</p></div>
+        <div class="projectText"><p class="p-10 m-4">As the team’s lead programmer and one of the primary creative contributors, I was responsible for implementing the game’s core mechanics, systems design, and backend structure. This included scripting player controls, developing the Railgun’s combat logic, and establishing tools to support efficient level and encounter creation. I also guided key gameplay decisions during concept and iteration phases, coordinated early prototype testing, and integrated player feedback into design adjustments. My work extended beyond technical implementation, contributing to the creative vision by suggesting a basis in old 'B-Movie' films</p>
+            <p class="p-10 m-4">To bring the concept to life, I began by prototyping in Unreal Engine using the First-Person Template as a foundation. I gave immense focus to our central mechanic early on, the Railgun itself—a one-hit-kill weapon designed to encourage precision and constant motion. The Railgun’s reload system was tied to accuracy, rewarding players who landed shots with faster recharge times, while additionally applying heavy 'knockback' to the player in the air. To achieve the highest mobility, is to open the risk of losing your primary offensive tool for longer, unless you 'chain' together from enemy to enemy, while simply helping to sell the power of the weapon. In parallel, I designed the dash system to be simple and intuitive, keeping it limited to eight directions for consistency and control. Vertical dashing was initially tested but ultimately removed to preserve clarity and maintain balance in player navigation to not render the 'Railgun Jump' redundant.</p></div>
+            <div class="projectImg rounded"><img class="profileImg rounded p-4" src="images/railgunImg3.jpg" alt="Early level design in a glowing red lab"><p class="p-10 fst-italic imgText">Early level design in a glowing red lab environment.</p></div>
+            <div class="projectText"><p class="p-10 m-4">Playtesting in April 2025 provided valuable feedback on level readability, difficulty, and player control. One key adjustment that emerged was the addition of a very short ranged punch, with players desire for one causing me to readdress our initial vision. In testing, while seemingly just a fallback option, it opened space for high skill execution when combined with movement. An additional element of tuning applied after testers found the melee enemies punishing was adding a telegraphed wind-up before their attacks to maintain challenge without sacrificing fairness.</p>
+
+                <p>From a technical standpoint, one of the most significant improvements came from overhauling the enemy spawning system. The original version relied on hardcoded blueprints for each encounter, which made design iteration slow and cumbersome. I replaced this with a modular spawn node and boundary setup, complete with adjustable parameters accessible through dropdown menus. This redesign reduced iteration time dramatically, allowing me to tweak encounters and pacing in seconds instead of minutes.</p>
+            <div class="projectImg rounded"><img class="profileImg rounded p-4" src="images/railgunImg4.jpg" alt="Display of new internal spawning system."><p class="p-10 fst-italic imgText">Display of new internal spawning system tool.</p></div>
+            <div class="projectText"><p class="p-10 m-4">The project concluded with a rebuilt level that featured more refined geometry, improved encounter flow, and a focused visual direction. Through this process, Project RAILGUN became a compact yet expressive demonstration of how focused mechanics, rapid iteration, and thoughtful system design can coalesce into a cohesive gameplay experience.</p>
+            <div class="projectImg rounded"><img class="profileImg rounded p-4" src="images/railgunImg5.png" alt="Screen of final version with new HUD."><p class="p-10 fst-italic imgText">SScreen of final version with new HUD.</p></div>
+
+    </div>
+    
+    <div class="divider mt-5 rounded"></div>
+    <h2 class="p-10 m-4">Credit for External Resources used in project</h2>
+
+<p class="p-10 m-4">- Effects such as dashing, double jumping, damage, were sourced from Pixabay. The creators attributed are:
+freesound_community : Electric Shock, Energy Gun, Gamma Laser, Gas Leak, Woosh, Ough.
+RescopicSound: Impact</p>
+
+<p class="p-10 m-4">- The music that plays in all levels are drawn from the band Hollywood Burns, sampling the following songs:
+A Moment of Bliss
+Black Saucers
+Californian Nightmare
+Silent Fortress
+Revenge of the Black Saucers
+Closing Titles</p>
+
+<p class="p-10 m-4">- The Railgun Model was created by CalWhite on sketchfab
+https://sketchfab.com/3d-models/halo-railgun-redesigned-ddb78bd428fa4be7a8b3613be5480192</p>
+    <div class="divider mt-5 rounded"></div>
+
+</main>
+
+<!-- Footer -->
+
+<footer>
+
+    <div class="mt-1 tumblespace">
+        <img class="tumble" src="images/Tumbleweed.png" alt="Tumbleweed">
+    </div>
+<div class="wrapper">
+    <ul>
+        
+    </ul>
+  
+    <ul>
+        <li>Erik Favian Gonzalez</li>
+        <li>&copy; All rights reserved 2025</li>
+    </ul>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
